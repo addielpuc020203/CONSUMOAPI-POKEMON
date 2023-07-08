@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjetas con Tailwind CSS</title>
+  <link rel="stylesheet" href="output.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+
+</head>
+<body>
+    
+    <nav class="bg-emerald-300">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <div class="flex items-center">
+            <div class="flex-shrink-0">
+             <!--- <img class="h-8 w-8" src="logo.png" alt="Logo"> -->
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-baseline space-x-4">
+                <a href="#" class="text-black hover:bg-green-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="#" class="text-black hover:bg-green-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">GITHUB</a>
+                <a href="#" class="text-black hover:bg-green-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">API-RICK</a>
+                <a href="#" class="text-black hover:bg-green-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">API-SIMPSON</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="search flex items-center">
+      <input type="text" placeholder="NAME FROM POKEMON" id="pokemon-name" value="picachu" class="p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent mr-4">
+      <button id="search-btn" class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">SEARCH</button>
+    </div>
+    
+    <div id="result"></div>
+    
+    
+    
+  <div id="modal" class="modal hidden">
+    <div class="modal-overlay"></div>
+    <div class="modal-container">
+      <div class="modal-content">
+        <h2></h2>
+        <img src="" alt="">
+      </div>
+      <button id="modal-close-btn" class="modal-close-btn ml-auto flex items-center p-2 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+    
+    
+    <script src="main.js"></script>
+
+</body>
+</html>
+
